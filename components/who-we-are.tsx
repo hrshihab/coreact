@@ -41,9 +41,10 @@ export function WhoWeAre() {
   ]
 
   const companyNarrative = [
-    "At Coreact, we do not just make materials; we engineer the future. We develop quantum dots that power innovation across displays, lighting, solar energy, biomedical imaging, and next-generation electronics.",
-    "Our scientists combine advanced nanotechnology with deep research expertise to create materials that improve LED color quality, lighting efficiency, solar performance, and high-resolution imaging.",
-    "From cutting-edge research to real-world applications, we deliver quantum dot solutions that elevate performance and redefine what is possible. At Coreact, innovation is who we are.",
+    "At Coreact, we don't just make materials—we engineer the future. As a leading Quantum Dots manufacturer, we transform light, color, and technology into solutions that power innovation across displays, lighting, solar energy, biomedical imaging, and next-generation electronics. What we create embodies precision, performance, and the promise of smarter, brighter, and more sustainable technologies.",
+    "Through the expertise of our world-class scientists, we are developing Quantum Dots that set new industry standards. By combining advanced nanotechnology with deep research experience, our team creates materials that enhance LED displays with richer colors, improve energy efficiency in lighting, boost solar cell performance, enable high-resolution biomedical imaging, and unlock breakthroughs in electronic devices.",
+    "Our innovation is bold, transformative, and uncompromising because the future demands materials that perform beyond expectations. At Coreact, innovation is not just what we do—it's who we are.",
+    "From cutting-edge research to real-world applications, we create Quantum Dot solutions that inspire creativity, elevate performance, and redefine what's possible. Coreact: engineering the future.",
   ]
 
   return (
@@ -71,8 +72,8 @@ export function WhoWeAre() {
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-display mb-5 text-balance">
             Who <span className="text-gradient-lime">We Are</span>
           </h2>
-          <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-            We build advanced quantum dot technologies that connect scientific depth with measurable industrial value.
+          <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed text-justify max-w-2xl mx-auto">
+            We engineer the future through quantum dot materials that power innovation across displays, lighting, solar energy, biomedical imaging, and next-generation electronics.
           </p>
         </motion.div>
 
@@ -86,7 +87,7 @@ export function WhoWeAre() {
           >
             <div className="absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-primary/0 via-primary/90 to-primary/0" />
             <h3 className="text-2xl sm:text-3xl font-bold tracking-display mb-3 text-foreground">Coreact at a glance</h3>
-            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed text-justify">
               We are a materials innovation company focused on turning quantum dot research into scalable performance
               gains for high-impact industries.
             </p>
@@ -122,11 +123,11 @@ export function WhoWeAre() {
               className="rounded-3xl border border-border/70 bg-background/70 p-5 sm:p-6 md:p-8"
             >
               <h3 className="text-xl sm:text-2xl font-semibold tracking-tight text-foreground mb-3">
-                Engineering the future of sight
+                Engineering the future
               </h3>
               <div className="space-y-3">
                 {companyNarrative.map((paragraph, index) => (
-                  <p key={index} className="text-base text-muted-foreground leading-relaxed">
+                  <p key={index} className="text-base text-muted-foreground leading-relaxed text-justify">
                     {paragraph}
                   </p>
                 ))}
@@ -157,7 +158,7 @@ export function WhoWeAre() {
 
                     <div className="space-y-2">
                       <h3 className="text-xl sm:text-2xl font-semibold tracking-tight text-foreground">{item.title}</h3>
-                      <p className="text-base text-muted-foreground leading-relaxed">{item.description}</p>
+                      <p className="text-base text-muted-foreground leading-relaxed text-justify">{item.description}</p>
                     </div>
                   </div>
                 </motion.article>
