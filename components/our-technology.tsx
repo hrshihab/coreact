@@ -47,7 +47,7 @@ export function OurTechnology() {
   ]
 
   return (
-    <section id="technology" className="relative py-16 sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <section id="technology" className="relative py-16 sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto" style={{ wordSpacing: '-0.05em' }}>
       <div
         className="pointer-events-none absolute inset-0 -z-10 opacity-50"
         style={{
@@ -135,17 +135,17 @@ export function OurTechnology() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.45, delay: index * 0.08 }}
-              className="relative overflow-hidden rounded-2xl border border-border/70 bg-background/70 p-5 sm:p-6 hover:border-primary/50 transition-colors"
+              className="relative overflow-hidden rounded-2xl border border-border/70 bg-background/70 p-5 sm:p-6 hover:border-primary/50 transition-colors text-left"
             >
               <div className="absolute top-0 left-0 h-0.5 w-full bg-gradient-to-r from-primary/0 via-primary/80 to-primary/0" />
               <div className="inline-flex items-center justify-center rounded-full border border-primary/30 bg-primary/10 px-2 py-1 text-xs font-semibold text-primary mb-3">
                 {(index + 1).toString().padStart(2, "0")}
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-2">{tech.title}</h3>
-              <p className="text-sm text-muted-foreground mb-4 leading-relaxed text-justify">{tech.description}</p>
+              <p className="text-sm text-muted-foreground mb-4 leading-relaxed text-left">{tech.description}</p>
               <div className="space-y-2">
                 {tech.specs.map((spec) => (
-                  <div key={spec} className="flex items-start gap-2 text-xs text-muted-foreground">
+                  <div key={spec} className="flex items-start gap-2 text-xs text-muted-foreground text-left">
                     <span className="w-1.5 h-1.5 rounded-full bg-primary mt-1.5 flex-shrink-0" />
                     <span>{spec}</span>
                   </div>

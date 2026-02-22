@@ -28,25 +28,25 @@ export function MessageFromDirector() {
             </h2>
 
             <div className="space-y-4">
-              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed text-justify hyphens-auto">
+              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed hyphens-auto text-justify">
                 We are living in an era where change moves faster than ever and only those who dare to lead will
                 define what comes next. At Coreact, we are not simply managing operations, we are shaping future-ready
                 infrastructure powered by advanced quantum dots technology.
               </p>
 
-              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed text-justify hyphens-auto">
+              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed hyphens-auto text-justify">
                 We believe every space and system can influence ideas, performance, and human progress. Our ambition
                 is to transform environments into intelligent, sustainable ecosystems that empower people and
                 organizations to achieve more than they thought possible.
               </p>
 
-              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed text-justify hyphens-auto">
+              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed hyphens-auto text-justify">
                 We challenge convention, embrace innovation, and move forward with purpose. Together with our clients,
                 partners, and team, we are building a new standard where operational brilliance, sustainability, and
                 human potential create extraordinary outcomes.
               </p>
 
-              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed text-justify hyphens-auto">
+              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed hyphens-auto">
                 The future is not something we wait for. It is something we create together.
               </p>
             </div>

@@ -47,7 +47,7 @@ export function OurTeam() {
           <div className="absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-primary/0 via-primary/90 to-primary/0" />
           <div className="space-y-4">
             {teamNarrative.map((paragraph, index) => (
-              <p key={index} className="text-base sm:text-lg text-muted-foreground leading-relaxed text-justify">
+              <p key={index} className="text-base sm:text-lg text-muted-foreground leading-relaxed">
                 {paragraph}
               </p>
             ))}

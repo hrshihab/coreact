@@ -40,19 +40,19 @@ export function MessageFromCEO() {
             </h2>
 
             <div className="space-y-4">
-              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed text-justify hyphens-auto">
+              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed hyphens-auto text-justify">
                 Excellence is never accidental. It is the result of vision, discipline, and an unwavering commitment to
                 quality. At Coreact, every environment and system we develop reflects precision, innovation, and high
                 standards of service.
               </p>
 
-              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed text-justify hyphens-auto">
+              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed hyphens-auto text-justify">
                 Our purpose is to build solutions that operate flawlessly, inspire confidence, and support lasting
                 success. We continue to invest in forward-thinking technologies, sustainable practices, and world-class
                 expertise to deliver measurable excellence every day.
               </p>
 
-              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed text-justify hyphens-auto">
+              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed hyphens-auto text-justify">
                 Our journey is defined by trust and partnership. With clients and teams, we are setting a benchmark
                 where performance, innovation, and integrity work seamlessly together to create long-term impact.
               </p>

@@ -1,4 +1,4 @@
-﻿"use client"
+"use client"
 
 import { motion, useReducedMotion } from "framer-motion"
 
@@ -62,11 +62,11 @@ export function MissionVision() {
             </h3>
 
             <div className="space-y-4">
-              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed text-justify">
+              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
                 Human vision was never meant to be the limit. Our mission is to create a new frontier in imaging where
                 quantum dot innovation and advanced silicon sensing converge to redefine how machines perceive reality.
               </p>
-              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed text-justify">
+              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
                 By integrating quantum dot materials into next-generation sensors, we expand perception across
                 infrared, ultraviolet, and high-energy spectrums, transforming invisible signals into actionable
                 intelligence.
@@ -98,11 +98,11 @@ export function MissionVision() {
             </h3>
 
             <div className="space-y-4">
-              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed text-justify">
+              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
                 We envision a future where advanced vision is embedded everywhere. Devices will no longer simply
                 observe the world, they will interpret it with unprecedented clarity, depth, and awareness.
               </p>
-              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed text-justify">
+              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
                 Our commitment is relentless exploration and bold innovation. We are building the foundation for a new
                 visual era where imaging technology transforms how humanity sees, learns, and advances.
               </p>

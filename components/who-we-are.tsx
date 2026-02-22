@@ -41,9 +41,9 @@ export function WhoWeAre() {
   ]
 
   const companyNarrative = [
-    "At Coreact, we don't just make materials—we engineer the future. As a leading Quantum Dots manufacturer, we transform light, color, and technology into solutions that power innovation across displays, lighting, solar energy, biomedical imaging, and next-generation electronics. What we create embodies precision, performance, and the promise of smarter, brighter, and more sustainable technologies.",
+    "At Coreact, we don't just make materials - we engineer the future. As a leading Quantum Dots manufacturer, we transform light, color, and technology into solutions that power innovation across displays, lighting, solar energy, biomedical imaging, and next-generation electronics. What we create embodies precision, performance, and the promise of smarter, brighter, and more sustainable technologies.",
     "Through the expertise of our world-class scientists, we are developing Quantum Dots that set new industry standards. By combining advanced nanotechnology with deep research experience, our team creates materials that enhance LED displays with richer colors, improve energy efficiency in lighting, boost solar cell performance, enable high-resolution biomedical imaging, and unlock breakthroughs in electronic devices.",
-    "Our innovation is bold, transformative, and uncompromising because the future demands materials that perform beyond expectations. At Coreact, innovation is not just what we do—it's who we are.",
+    "Our innovation is bold, transformative, and uncompromising because the future demands materials that perform beyond expectations. At Coreact, innovation is not just what we do - it's who we are.",
     "From cutting-edge research to real-world applications, we create Quantum Dot solutions that inspire creativity, elevate performance, and redefine what's possible. Coreact: engineering the future.",
   ]
 
@@ -72,7 +72,7 @@ export function WhoWeAre() {
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-display mb-5 text-balance">
             Who <span className="text-gradient-lime">We Are</span>
           </h2>
-          <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed text-justify max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed text-center max-w-2xl mx-auto">
             We engineer the future through quantum dot materials that power innovation across displays, lighting, solar energy, biomedical imaging, and next-generation electronics.
           </p>
         </motion.div>
@@ -87,7 +87,7 @@ export function WhoWeAre() {
           >
             <div className="absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-primary/0 via-primary/90 to-primary/0" />
             <h3 className="text-2xl sm:text-3xl font-bold tracking-display mb-3 text-foreground">Coreact at a glance</h3>
-            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed text-justify">
+            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed ">
               We are a materials innovation company focused on turning quantum dot research into scalable performance
               gains for high-impact industries.
             </p>
@@ -125,13 +125,13 @@ export function WhoWeAre() {
               <h3 className="text-xl sm:text-2xl font-semibold tracking-tight text-foreground mb-3">
                 Engineering the future
               </h3>
-              <div className="space-y-3">
+              <ul className="space-y-3 text-left">
                 {companyNarrative.map((paragraph, index) => (
-                  <p key={index} className="text-base text-muted-foreground leading-relaxed text-justify">
-                    {paragraph}
-                  </p>
+                  <li key={index} className="text-base text-muted-foreground leading-relaxed text-justify">
+                    <span className="text-justify">{paragraph}</span>
+                  </li>
                 ))}
-              </div>
+              </ul>
             </motion.article>
 
             {narrativeCards.map((item, index) => {
