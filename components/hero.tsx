@@ -139,7 +139,7 @@ export function Hero() {
         aria-hidden
       />
       {/* Particles background */}
-      <Particles quantity={50} size={0.8} className="absolute inset-0 z-0" />
+      <Particles quantity={50} size={0.8} spread={0.4} attraction={0.006} className="absolute inset-0 z-0" />
 
       {/* Animated quantum dots background - only render on client to avoid hydration mismatch from Math.random() */}
       {!shouldReduceMotion && mounted && (

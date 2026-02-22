@@ -9,6 +9,10 @@ interface ParticlesProps {
   ease?: number
   size?: number
   refresh?: boolean
+  /** 0 = tightly centered, 1 = spread over full area (default). Controls initial spawn region. */
+  spread?: number
+  /** Mouse pull strength toward cursor. */
+  attraction?: number
 }
 
 export function Particles({
@@ -18,6 +22,8 @@ export function Particles({
   ease = 50,
   size = 0.4,
   refresh = false,
+  spread = 1,
+  attraction = 0.003,
 }: ParticlesProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const animationFrameId = useRef<number | null>(null)
@@ -40,11 +46,16 @@ export function Particles({
 
     const particles: Array<{ x: number; y: number; dx: number; dy: number; size: number }> = []
 
-    // Initialize particles
+    // spread: 0 = center only, 1 = full area. Spawn in a region around center.
+    const w = rect.width * Math.max(0.1, spread)
+    const h = rect.height * Math.max(0.1, spread)
+    const offsetX = (rect.width - w) / 2
+    const offsetY = (rect.height - h) / 2
+
     for (let i = 0; i < quantity; i++) {
       particles.push({
-        x: Math.random() * rect.width,
-        y: Math.random() * rect.height,
+        x: offsetX + Math.random() * w,
+        y: offsetY + Math.random() * h,
         dx: (Math.random() - 0.5) * 0.5,
         dy: (Math.random() - 0.5) * 0.5,
         size: Math.random() * size + 0.5,
@@ -93,8 +104,8 @@ export function Particles({
 
         if (distance < 100) {
           const angle = Math.atan2(dy, dx)
-          particle.dx += Math.cos(angle) * 0.1
-          particle.dy += Math.sin(angle) * 0.1
+          particle.dx += Math.cos(angle) * attraction
+          particle.dy += Math.sin(angle) * attraction
         }
       })
 
@@ -109,7 +120,7 @@ export function Particles({
         cancelAnimationFrame(animationFrameId.current)
       }
     }
-  }, [quantity, size, refresh])
+  }, [quantity, size, refresh, spread, attraction])
 
   return (
     <canvas

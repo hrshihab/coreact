@@ -60,7 +60,7 @@ export function MessageFromDirector() {
           <div className="lg:col-span-4 order-1 lg:order-2">
             <div className="relative rounded-2xl overflow-hidden border border-border/70 bg-background/60 aspect-[4/5] min-h-[380px]">
               <Image
-                src="/Images/IMG_7984.PNG"
+                src="/coreact-team-headshot.png"
                 alt="Mr. Masum Parvez, Director and Vice President"
                 fill
                 className="object-cover object-top"

@@ -40,6 +40,12 @@ export function WhoWeAre() {
     "High-resolution biomedical imaging",
   ]
 
+  const companyNarrative = [
+    "At Coreact, we do not just make materials; we engineer the future. We develop quantum dots that power innovation across displays, lighting, solar energy, biomedical imaging, and next-generation electronics.",
+    "Our scientists combine advanced nanotechnology with deep research expertise to create materials that improve LED color quality, lighting efficiency, solar performance, and high-resolution imaging.",
+    "From cutting-edge research to real-world applications, we deliver quantum dot solutions that elevate performance and redefine what is possible. At Coreact, innovation is who we are.",
+  ]
+
   return (
     <section id="who-we-are" className="relative py-16 sm:py-20 md:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       <div
@@ -108,6 +114,25 @@ export function WhoWeAre() {
           </motion.aside>
 
           <div className="lg:col-span-8 space-y-4">
+            <motion.article
+              initial={shouldReduceMotion ? {} : { opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.45 }}
+              className="rounded-3xl border border-border/70 bg-background/70 p-5 sm:p-6 md:p-8"
+            >
+              <h3 className="text-xl sm:text-2xl font-semibold tracking-tight text-foreground mb-3">
+                Engineering the future of sight
+              </h3>
+              <div className="space-y-3">
+                {companyNarrative.map((paragraph, index) => (
+                  <p key={index} className="text-base text-muted-foreground leading-relaxed">
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            </motion.article>
+
             {narrativeCards.map((item, index) => {
               const Icon = item.icon
               return (

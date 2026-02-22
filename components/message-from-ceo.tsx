@@ -21,7 +21,7 @@ export function MessageFromCEO() {
           <div className="lg:col-span-4">
             <div className="relative rounded-2xl overflow-hidden border border-border/70 bg-background/60 aspect-[4/5] min-h-[380px]">
               <Image
-                src="/coreact-team-headshot.png"
+                src="/Images/IMG_7984.PNG"
                 alt="Mr. Avishek Mittal, Managing Director and CEO"
                 fill
                 className="object-cover object-top"

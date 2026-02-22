@@ -65,8 +65,8 @@ export function WhatAreQuantumDots() {
             What Are <span className="text-gradient-lime">Quantum Dots</span>?
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-            Quantum dots are nanoscale semiconductor particles that let us engineer light with extraordinary precision
-            for displays, sensing, imaging, and energy systems.
+            Quantum dots are tiny semiconductor particles thousands of times smaller than the width of a human hair,
+            yet they hold the power to transform how we create and experience technology.
           </p>
         </motion.div>
 
@@ -83,12 +83,15 @@ export function WhatAreQuantumDots() {
               Tiny particles, massive capability
             </h3>
             <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-4">
-              Thousands of times smaller than a human hair, quantum dots behave differently at the nanoscale. That
-              behavior enables optical and electrical properties conventional materials cannot easily match.
+              Operating at the nanoscale, these extraordinary materials behave differently from larger substances,
+              unlocking unique optical and electrical properties that make them foundational to the future of
+              nanotechnology. What makes quantum dots remarkable is their precision. When energized by electricity
+              or light, they emit pure, highly tunable colors.
             </p>
             <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-6">
-              More than a scientific milestone, quantum dots provide an engineering platform for creating brighter
-              displays, more sensitive sensors, and smarter systems that interpret the world with greater fidelity.
+              By carefully controlling their size, shape, and composition, scientists can precisely determine the
+              wavelength of light they produce. This means technology can be engineered with unprecedented control
+              over brightness, efficiency, and performance.
             </p>
             <ul className="space-y-2.5">
               <li className="flex items-start gap-2 text-sm text-muted-foreground leading-relaxed">
@@ -125,9 +128,6 @@ export function WhatAreQuantumDots() {
                   className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
                   sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
                 />
-                <div className="absolute top-3 left-3 inline-flex h-7 w-7 items-center justify-center rounded-full border border-primary/40 bg-background/80 text-[11px] font-semibold text-primary">
-                  {`0${index + 1}`}
-                </div>
               </div>
               <div className="p-5">
                 <h3 className="text-base sm:text-lg font-semibold text-foreground mb-2">{feature.title}</h3>
