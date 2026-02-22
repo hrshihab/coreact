@@ -86,7 +86,7 @@ export function AboutCoreact() {
           <article className="lg:col-span-8 rounded-3xl border border-border/70 bg-background/70 p-6 sm:p-8">
             <h3 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">Coreact at a glance</h3>
             <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-4  text-justify ">
-              At Coreact, we are shaping the future of imaging through breakthrough quantum dot materials and advanced
+              We are shaping the future of imaging through breakthrough quantum dot materials and advanced
               sensor technologies. As a pioneering developer and manufacturer in the field of wide-range image
               sensing, our mission is to push beyond the boundaries of conventional vision and enable technologies
               that see more, understand more, and achieve more.
