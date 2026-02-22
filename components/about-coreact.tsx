@@ -85,18 +85,18 @@ export function AboutCoreact() {
         >
           <article className="lg:col-span-8 rounded-3xl border border-border/70 bg-background/70 p-6 sm:p-8">
             <h3 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">Coreact at a glance</h3>
-            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-4">
+            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-4  text-justify ">
               At Coreact, we are shaping the future of imaging through breakthrough quantum dot materials and advanced
               sensor technologies. As a pioneering developer and manufacturer in the field of wide-range image
               sensing, our mission is to push beyond the boundaries of conventional vision and enable technologies
               that see more, understand more, and achieve more.
             </p>
-            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-4">
+            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-4 text-justify">
               Since our founding in 2021, we have rapidly grown into a trusted innovation partner for businesses and
               academic institutions worldwide. Through strong collaborations and relentless research, we deliver
               cutting-edge solutions that bridge scientific discovery with real-world impact.
             </p>
-            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
+            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed text-justify">
               Driven by a vision of a smarter, more perceptive future, we are building foundational technologies that
               empower next-generation imaging systems across industries. Our commitment to innovation, scientific
               excellence, and global collaboration positions Coreact at the forefront of a new era where quantum dot

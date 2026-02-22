@@ -82,13 +82,13 @@ export function WhatAreQuantumDots() {
             <h3 className="text-2xl sm:text-3xl font-bold tracking-display text-foreground mb-4">
               Tiny particles, massive capability
             </h3>
-            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-4">
+            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-4 text-justify">
               Operating at the nanoscale, these extraordinary materials behave differently from larger substances,
               unlocking unique optical and electrical properties that make them foundational to the future of
               nanotechnology. What makes quantum dots remarkable is their precision. When energized by electricity
               or light, they emit pure, highly tunable colors.
             </p>
-            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-6">
+            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-6 text-justify">
               By carefully controlling their size, shape, and composition, scientists can precisely determine the
               wavelength of light they produce. This means technology can be engineered with unprecedented control
               over brightness, efficiency, and performance.
