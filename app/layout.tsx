@@ -12,13 +12,62 @@ const _ptMono = PT_Mono({
   variable: "--font-pt-mono",
 })
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://coreact.com"
+
 export const metadata: Metadata = {
-  title: "Coreact - Quantum Dot Technology",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Coreact - Quantum Dot Technology",
+    template: "%s | Coreact",
+  },
   description:
     "Engineering the future of quantum dot materials and advanced sensor technologies. Transforming displays, imaging, and sensing across industries.",
-  generator: "v0.app",
+  keywords: [
+    "quantum dots",
+    "quantum dot technology",
+    "display technology",
+    "QD materials",
+    "sensor technology",
+    "nanomaterials",
+    "Coreact",
+  ],
+  authors: [{ name: "Coreact", url: siteUrl }],
+  creator: "Coreact",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: siteUrl,
+    siteName: "Coreact",
+    title: "Coreact - Quantum Dot Technology",
+    description:
+      "Engineering the future of quantum dot materials and advanced sensor technologies. Transforming displays, imaging, and sensing across industries.",
+    images: [
+      {
+        url: "/logo.png",
+        width: 512,
+        height: 512,
+        alt: "Coreact - Quantum Dot Technology",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Coreact - Quantum Dot Technology",
+    description:
+      "Engineering the future of quantum dot materials and advanced sensor technologies.",
+    images: ["/logo.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
   icons: {
     icon: [
+      { url: "/favicon.png", type: "image/png" },
       {
         url: "/icon-light-32x32.png",
         media: "(prefers-color-scheme: light)",
